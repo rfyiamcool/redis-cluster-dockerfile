@@ -21,7 +21,7 @@ RUN yum clean all
 
 RUN touch ceshi.file
 RUN cd /app \
-	&& wget http://xiaorui.cc/redis-3.0.1.tar.gz \
+	&& wget http://download.redis.io/releases/redis-3.0.1.tar.gz \
 	&& tar zxvf redis-3.0.1.tar.gz \
 	&& mv redis-3.0.1 redis \ 
 	&& cd redis \
