@@ -11,8 +11,12 @@ docker build -t redis_cluster --rm .
 
 docker run -it --net=host redis_cluster 9000
 
+docker run -it --name=redis_9000 --net=host redis_cluster 9000
+
 OR
 
 docker run -it --net=host redis_cluster 9000 10.10.32.88
 
+
+docker exec -it redis_9000 bash
 ```
